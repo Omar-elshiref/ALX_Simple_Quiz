@@ -1,5 +1,5 @@
 function checkAnswer() {
-  let correctAnswer = 4;
+  let correctAnswer = "4";
 
   let input = document.querySelector("[name= 'quiz']:checked");
 
@@ -7,7 +7,7 @@ function checkAnswer() {
 
   let feedBack = document.getElementById("feedback");
 
-  if (correctAnswer == userAnswer) {
+  if (correctAnswer === userAnswer) {
     feedBack.textContent = "Correct! Well done.";
   } else {
     feedBack.textContent = "That's incorrect. Try again!";
